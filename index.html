@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self' js/*.js 'unsafe-inline' 'unsafe-hashes';">
+		
+		<!-- JavaScript -->
+		<!-- <script src="./js/main.js"></script> -->
+		<script src="./js/clipboard.min.js"></script> 
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+
+	<body>
+		<article id="root">
+			<section id="main">
+				<form id="form">
+					<label>
+						<span>Chave:</span>
+						<input type="password" name="chave" id="chave" maxlength="10" />
+					</label>
+
+					<label>
+						<span>Padrão:</span>
+						<input type="text" name="texto" id="texto" />
+					</label>
+
+					<label id="showPass">
+						<input type="checkbox" id="btnShowPass" />
+						<span>Mostrar Chave</span>
+					</label>
+
+					<div id="divOutput" class="btnCopy" data-clipboard-target="#output">
+						<input id="output" readonly value="" />
+						<img src="assets/copy.svg" id="copy" />
+					</div>
+				</form>
+			</section>
+		</article>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Gerador de Senhas - TOPSENHA",
+  "description": "Aplicativo para gerar senhas utilizando uma chave e um padrão.",
+  "version": "1.0",
+  "short_name": "TOPSENHA",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/favicon/apple-icon.png"
+  },
+  "icons": {
+    "16": "assets/favicon/favicon-16x16.png",
+    "32": "assets/favicon/favicon-32x32.png",
+    "128": "assets/favicon/favicon-96x96.png"
+  }
+}

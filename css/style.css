@@ -1,0 +1,141 @@
+body {
+    background-color: var(--CorPrincipal);
+    color: var(--CorTexto);
+    font-size: larger;
+    padding: 20px;
+}
+
+#root {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+}
+
+#main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid var(--CorTexto);
+    padding: 15px;
+}
+
+#form {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label > input {
+    margin-left: 5px;
+    border: 1px solid #8f8f9d;
+    color: #000;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+input:disabled {
+    border: 1px solid #d9dadc;
+
+}
+
+#showPass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#divOutput {
+    height: 25px;
+    background-color: #d9dadc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #d9dadc;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: copy;
+}
+
+#output {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-right: 1px solid black;
+    color: #000;
+    background-color: #ffffff00;
+    cursor: copy;
+}
+
+#copy {
+    width: 100%;
+    margin: 3px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: inherit;
+    font-weight: initial;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Lista de botões no cabeçalho*/
+header > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--CorTexto) 1px solid;
+}
+
+header > ul > li {
+    border-right: 1px solid var(--CorTexto);
+    padding: 10px;
+}
+
+header > ul > li:first-child {
+    border-left: 1px solid var(--CorTexto);
+}
+
+header > ul > li > * {
+    cursor: pointer;
+}
+
+header > ul > li > i {
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer > * {
+        margin: 5px 0px;
+        order: 3;
+    }
+
+    footer > div {
+        order: 1;
+    }
+}
