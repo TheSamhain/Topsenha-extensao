@@ -156,9 +156,9 @@ const chave = document.getElementById('chave').addEventListener('input', cripto)
 
 const texto = document.getElementById('texto').addEventListener('input', cripto);
 
-const btnShowPass = document.getElementById('btnShowPass').addEventListener('click', (btn) => {
-	showPassword(btn.target.checked);
-});
+const btnShowPass = document
+	.getElementById('btnShowPass')
+	.addEventListener('click', (btn) => showPassword(btn.target.checked));
 
 const btnChangeTheme = document.getElementById('btnChangeTheme').addEventListener('click', changeTheme);
 
