@@ -2,7 +2,6 @@ body {
     background-color: var(--CorPrincipal);
     color: var(--CorTexto);
     font-size: larger;
-    padding: 20px;
 }
 
 #root {
@@ -21,6 +20,7 @@ body {
     align-items: center;
     display: flex;
     flex: 1;
+    margin-bottom: 20px;
 }
 
 footer {
